@@ -1,8 +1,13 @@
 file = open('phonebook.txt','r')
 NAME=[]; PHONE=[]
+temp=0
 for i in file:
-    NAME.append(i)
-    PHONE.append(i)
+    if temp==0
+        NAME.append(i)
+        temp=1
+    elif temp==1
+        PHONE.append(i)
+        temp=0
 file.close
 x=raw_input("Write 1 for input, 2 for search and 3 for exit: ")
 while x!="3":
